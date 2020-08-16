@@ -1,8 +1,8 @@
 <?php
 
-namespace XeroPHP\Tests\Remote;
+namespace XeroHatch\Tests\Remote;
 
-use XeroPHP\Remote\Model;
+use XeroHatch\Remote\Model;
 
 class ModelTest extends \PHPUnit_Framework_TestCase
 {

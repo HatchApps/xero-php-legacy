@@ -1,10 +1,10 @@
 <?php
 
-namespace XeroPHP\tests;
+namespace XeroHatch\tests;
 
-use XeroPHP\Webhook;
-use XeroPHP\Application;
-use XeroPHP\Application\PrivateApplication;
+use XeroHatch\Webhook;
+use XeroHatch\Application;
+use XeroHatch\Application\PrivateApplication;
 
 class EventTest extends \PHPUnit_Framework_TestCase
 {
@@ -32,7 +32,7 @@ class EventTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \XeroPHP\Application\Exception
+     * @expectedException \XeroHatch\Application\Exception
      */
     public function testMalformedPayload()
     {
@@ -123,10 +123,10 @@ class EventTest extends \PHPUnit_Framework_TestCase
         $this->assertNull($evt->getEventClass());
 
         $evt = array_pop($events);
-        $this->assertSame(\XeroPHP\Models\Accounting\Contact::class, $evt->getEventClass());
+        $this->assertSame(\XeroHatch\Models\Accounting\Contact::class, $evt->getEventClass());
 
         $evt = array_pop($events);
-        $this->assertSame(\XeroPHP\Models\Accounting\Invoice::class, $evt->getEventClass());
+        $this->assertSame(\XeroHatch\Models\Accounting\Invoice::class, $evt->getEventClass());
     }
 
     public function testGetTenantId()

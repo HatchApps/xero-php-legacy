@@ -1,10 +1,10 @@
 <?php
 
-namespace XeroPHP\Tests\Remote\OAuth;
+namespace XeroHatch\Tests\Remote\OAuth;
 
-use XeroPHP\Application\PrivateApplication;
-use XeroPHP\Remote\Request;
-use XeroPHP\Remote\URL;
+use XeroHatch\Application\PrivateApplication;
+use XeroHatch\Remote\Request;
+use XeroHatch\Remote\URL;
 
 class ClientTest extends \PHPUnit_Framework_TestCase
 {
